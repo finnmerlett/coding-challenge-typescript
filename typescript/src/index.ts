@@ -4,10 +4,8 @@ type Team = {
 };
 
 export const getResults = (division: Team[], n: number) => {
-  // first check here to avoid index errors when slicing array
-  if (n >= division.length) {
-    throw new Error("n is too large for the given division");
-  }
+  if (!Number.isInteger(n)) throw new Error("n must be an integer");
+  if (n <= 0) throw new Error("n must be greater than 0");
 
   // sort in descending points order (largest first)
   division.sort((teamA, teamB) => teamB.points - teamA.points);

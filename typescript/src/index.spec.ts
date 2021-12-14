@@ -48,3 +48,9 @@ Renegades`;
 test("catches an 'n' value too large for the given division", () => {
   expect(() => getResults(givenDivision, 4)).toThrow(/n is too large/);
 });
+
+test("catches an 'n' value too small or non integer", () => {
+  expect(() => getResults(givenDivision, 0)).toThrow(/n must be greater than 0/);
+  expect(() => getResults(givenDivision, -5)).toThrow(/n must be greater than 0/);
+  expect(() => getResults(givenDivision, 4.3)).toThrow(/n must be an integer/);
+});
