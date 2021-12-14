@@ -1,4 +1,4 @@
-# Net Purpose coding challenge
+# Coding challenge
 
 ## Setup
 
@@ -11,7 +11,7 @@
 **Given a number , _n_, find the _n_ highest and lowest scores in the given array.**
 _This task should take you no longer than 15-30 minutes._
 
-The Net Purpose Hockey League (NPHL) is now in season! At the end of the season, the top _n_ teams get promoted to the division above and the bottom _n_ teams get relegated to the division below.
+The Hockey League is now in season! At the end of the season, the top _n_ teams get promoted to the division above and the bottom _n_ teams get relegated to the division below.
 
 The division results are provided as an array of teams, as follows:
 
@@ -82,8 +82,3 @@ There is an empty function in `src/index.ts` where you can write the implementat
 
 - We are interested in your implementation of the solution, not the unit test code. Please feel free to add unit tests to help with development though.
 - We are looking for clean code, which is easy to read and free of code smells.
-
-## Submitting the task
-
-When you have completed the challenge, please upload your solution to GitHub, GitLab or similar. When you have done this, please share a link with us at dev-team@netpurpose.com.
-If you have any problems, we can also accept the solution attached to an email.
